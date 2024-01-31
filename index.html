@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">TO DO LIST</h1>
+        <img id="switch" class="switch" src="images/icon-moon.svg" alt="" />
+      </div>
+    </header>
+    <main class="main">
+      <form id="form" class="form">
+        <label for="input-task" class="label-task"></label>
+        <input class="input-task" id="input-task" name="task" type="text" placeholder="Create a new todo..." />
+      </form>
+      <div id="tasks" class="tasks"></div>
+      <div class="tasks-footer">
+        <span id="items-left">5 items left</span>
+        <span id="delete-completed" class="click-element">Clear Completed</span>
+      </div>
+      <div id="filters" class="filters">
+        <button data-filter="all" class="filter filter--active">All</button>
+        <button data-filter="active" class="filter">Active</button>
+        <button data-filter="completed" class="filter">Completed</button>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
